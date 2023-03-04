@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Loading a page fragment</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+body {
+    max-width: 40rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+section {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<header id="title1">
+</header>
+<article id="intro1">
+</article>
+<div>
+    <a href="posts/post1.html">Read the rest of the post&hellip;</a>
+</div>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('#title1').load('posts/post1.html h1');
+    $('#intro1').load('posts/post1.html .first-paragraph');
+});
+        </script>
+    </body>
+</html>

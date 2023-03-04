@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calling a function after the page is loaded</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+<!-- Other body elements go here -->
+<script>
+    makeBackgroundRed();
+</script>
+        <script>
+            
+function makeBackgroundRed() {
+    document.body.style.backgroundColor = "red";
+    console.log("The background is now red.");
+}
+        </script>
+    </body>
+</html>

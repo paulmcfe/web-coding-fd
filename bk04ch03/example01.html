@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dividing content into tabs</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+.ui-tabs {
+    width: 300px;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="my-tabs">
+    <ul>
+        <li><a href="#my-tab-1">This</a></li>
+        <li><a href="#my-tab-2">That</a></li>
+        <li><a href="#my-tab-3">The Other</a></li>
+    </ul>
+    <div id="my-tab-1">
+        This is the first tab's content.
+    </div>
+    <div id="my-tab-2">
+        This is the second tab's content.
+    </div>
+    <div id="my-tab-3">
+        Yep, this is the third tab's content.
+    </div>
+</div>
+        <script>
+            
+$(document).ready(function() {
+    $('#my-tabs').tabs();
+console.log('Yep, it is.');
+});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using the switch() statement</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var yearValue = 2020;
+var monthName = "February";
+var daysInMonth;
+switch(monthName) {
+    case "January":
+        daysInMonth = 31;
+        break;
+    case "February":
+        if (yearValue % 4 == 0) {
+            daysInMonth = 29;
+        }
+        else {
+            daysInMonth = 28;
+        }
+        break;
+    case "March":
+        daysInMonth = 31;
+        break;
+    case "April":
+        daysInMonth = 30;
+        break;
+    case "May":
+        daysInMonth = 31;
+        break;
+    case "June":
+        daysInMonth = 30;
+        break;
+    case "July":
+        daysInMonth = 31;
+        break;
+    case "August":
+        daysInMonth = 31;
+        break;
+    case "September":
+        daysInMonth = 30;
+        break;
+    case "October":
+        daysInMonth = 31;
+        break;
+    case "November":
+        daysInMonth = 30;
+        break;
+    case "December":
+        daysInMonth = 31;
+}
+
+console.log("There are " + daysInMonth + " days in " + monthName + ", " + yearValue);
+        </script>
+    </body>
+</html>

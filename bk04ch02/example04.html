@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The double-click event</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem;
+    width: 50vw;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    border: 4px double black;
+    font-size: 1.25rem;
+    color: lemonchiffon;
+    background-color: darkgreen;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="my-div">
+    Double-click to switch the text and background colors.
+</div>
+
+
+        <script>
+            
+$('#my-div').dblclick(function() {
+    if($('#my-div').css('color') === 'rgb(255, 250, 205)') {
+        $('#my-div').css('color', 'darkgreen');
+        $('#my-div').css('background-color', 'lemonchiffon');
+    } else {
+        $('#my-div').css('color', 'lemonchiffon');
+        $('#my-div').css('background-color', 'darkgreen');
+    }
+});
+        </script>
+    </body>
+</html>

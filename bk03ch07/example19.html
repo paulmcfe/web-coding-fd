@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Inserting elements at the beginning of an array: unshift()</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var myArray = new Array("First", "Second", "Third");
+var newLength = myArray.unshift("Fourth", "Fifth", "Sixth");
+var str = "myArray: " + myArray + "<br>";
+str += "newLength: " + newLength;
+
+document.getElementById('output').innerHTML  = str;
+        </script>
+    </body>
+</html>

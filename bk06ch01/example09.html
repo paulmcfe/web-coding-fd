@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Returning Ajax Data as a JSON Object</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 25rem;
+    margin: 1rem;
+}
+
+section {
+    border: 1px solid black;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<h1>Supplier Contacts</h1>
+<main>
+</main>
+
+
+        <script>
+            
+$(document).ready(function() {
+   $.getJSON('php/get-supplier-contacts.php', function(data) {
+        $.each(data, function(index, contact) {
+            $('main').append('<section id="contact' + index + '"></section>');
+            $('#contact' + index).append('<div>Company: ' + contact.company_name + '</div>');
+            $('#contact' + index).append('<div>Contact: ' + contact.contact_name + '</div>');
+            $('#contact' + index).append('<div>Title: ' + contact.contact_title + '</div>');
+            $('#contact' + index).append('<div>Email: ' + contact.contact_email + '</div>');
+        });
+    });  
+});
+        </script>
+    </body>
+</html>

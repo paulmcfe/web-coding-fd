@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calling a function is response to an event</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+<button onclick="makeBackgroundRed()">
+    Make Background Red
+</button>
+<button onclick="makeBackgroundWhite()">
+    Make Background White
+</button>
+        <script>
+            
+function makeBackgroundRed() {
+    document.body.style.backgroundColor= "red";
+}
+
+function makeBackgroundWhite() {
+    document.body.style.backgroundColor= "white";
+}
+        </script>
+    </body>
+</html>

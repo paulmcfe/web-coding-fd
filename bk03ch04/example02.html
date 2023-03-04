@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Branching with if()…else Statements</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var currMonth = "August";
+var regularPrice = 10;
+var discountRate;
+if (currMonth == "December") {
+    discountRate = 0.2;
+}
+else {
+    discountRate = 0.1;
+}
+var discountedPrice = regularPrice * (1 - discountRate);
+console.log("The discount rate is " + discountRate);
+console.log("The discounted price is " + discountedPrice);
+        </script>
+    </body>
+</html>

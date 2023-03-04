@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Returning a Value from a Function</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var preTipTotal = 100.00;
+var tipPercentage = 0.15;
+var tipCost;
+var totalBill;
+
+function calculateTip(preTip, tipPercent) {
+    var tipResult = preTip * tipPercent;
+    return (tipResult);
+}
+
+tipCost = calculateTip(preTipTotal, tipPercentage);
+totalBill = preTipTotal + tipCost;
+console.log("Your total bill is $" + totalBill);
+        </script>
+    </body>
+</html>

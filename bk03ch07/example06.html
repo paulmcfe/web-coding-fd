@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using a loop to work with an array</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+body {
+    background-size: 100vw 100vh;
+}
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+// Declare the array
+var dogPhotos = new Array(5);
+
+// Initialize the array values using a loop
+for (var counter = 0; counter < 5; counter++) {
+    dogPhotos[counter] = "dog-" + (counter + 1);
+}
+
+// Get the photo number
+var promptNum = prompt("Enter the dog you want to see (1-5):", "");
+
+if (promptNum !== "" && promptNum !== null) {
+
+    // Construct the primary part of the filename
+    var promptDog = "dog-" + promptNum;
+    
+    // Work with the array values using a loop
+    for (counter = 0; counter < 5; counter++) {
+        if (promptDog === dogPhotos[counter]) {
+            document.body.style.backgroundImage = "url('/images/" + dogPhotos[counter] + ".png')";
+            break;
+        }
+    }
+}
+        </script>
+    </body>
+</html>

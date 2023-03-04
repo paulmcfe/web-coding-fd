@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adding an element to the page</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+<main>
+</main>
+        <script>
+            
+newArticle = document.createElement("article");
+document.querySelector("main").appendChild(newArticle);
+newArticle.innerHTML = "Hello <code>document</code> Object World!";
+        </script>
+    </body>
+</html>

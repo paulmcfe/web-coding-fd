@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Passing a single value to a function</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+<button onclick="changeBackgroundColor('red')">
+    Make Background Red
+</button>
+<button onclick="changeBackgroundColor('white')">
+    Make Background White
+</button>
+        <script>
+            
+function changeBackgroundColor(newColor) {
+    document.body.style.backgroundColor = newColor;
+}
+        </script>
+    </body>
+</html>

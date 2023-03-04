@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Concatenating to create a new array: concat()</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var array1 = new Array("One", "Two", "Three");
+var array2 = new Array("A", "B", "C");
+var array3 = array1.concat(array2);
+var str = '';
+for (var counter = 0; counter < array3.length; counter++) {
+    str += array3[counter] + '<br>';
+}
+document.getElementById('output').innerHTML = str;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bypassing loop statements using the continue statement</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var counter = 0;
+var sum = 0;
+var num;
+while (counter < 3) {
+    num = prompt("Type a number:", 1);
+    if (num === null) {
+        continue;
+    }
+    sum += Number(num);
+    counter++;
+}
+console.log("The average of your numbers is " + sum / 3);
+        </script>
+    </body>
+</html>

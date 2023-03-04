@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The slice() method</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+pre,
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<pre>
+Web Coding and Development for Dummies
+01234567890123456789012345678901234567
+</pre>
+
+<div id="output">
+</div>
+        <script>
+            
+var bookName = "Web Coding and Development for Dummies";
+
+var str = "slice(0, 3) = " + bookName.slice(0, 3) + "<br>";
+str += "slice(4, 10) = " + bookName.slice(4, 10) + "<br>";
+str += "slice(15) = " + bookName.slice(15) + "<br>";
+str += "slice(0, -12) = " + bookName.slice(0, -12);
+
+document.getElementById("output").innerHTML = str;
+        </script>
+    </body>
+</html>

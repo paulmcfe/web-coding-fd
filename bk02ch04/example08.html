@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Centering an element horizontally and vertically</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: .5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    border: 5px double black;
+}
+
+.item {
+    font-family: "Georgia", serif;
+    font-size: 2rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div class="container">
+    <div class="item">Look, ma, I’m centered!</div>
+</div>
+        <script>
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Setting multiple CSS property values</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+#my-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 25vw;
+    margin: 1rem;
+    font-family: Verdana, serif;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="my-div">
+Hello World!
+</div>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('#my-div').css({
+        'color': 'lemonchiffon',
+        'background-color': 'maroon',
+        'font-size': '2rem'
+    });
+});
+        </script>
+    </body>
+</html>

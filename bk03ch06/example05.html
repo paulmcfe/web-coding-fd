@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using an interval to perform a future action repeatedly</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var counter = 10;
+
+// Set the interval
+var intervalId = setInterval(countdown, 1000);
+
+// Run this function at the end of each interval
+function countdown() {
+
+    // Display the countdown and decrement the counter
+    console.log(counter--);
+    
+    // Cancel the interval when we hit 0
+    if (counter < 0) {
+        clearInterval(intervalId);
+        console.log("All done!");
+    }
+}
+        </script>
+    </body>
+</html>

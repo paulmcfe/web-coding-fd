@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Declaring and using JSON variables</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 40rem;
+    margin: 1rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<h1>JSON Data:</h1>
+<article>
+</article>
+
+
+        <script>
+            
+$(document).ready(function() {
+    var customer = {
+        "account": 853,
+        "name": "Alfreds Futterkiste",
+        "supplier": false,
+        "recentOrders": [28394,29539,30014],
+        "contact": {
+            "name": "Maria Anders",
+            "phone": "030-0074321",
+            "email": "m.anders@futterkiste.com"
+        }
+    }
+    
+    $('article').append('<h3>' + customer.account + '</h3>');
+    $('article').append('<h3>' + customer.name + '</h3>');
+
+    $('article').append('<h3>' + customer.recentOrders[1] + '</h3>');
+    $('article').append('<h3>' + customer.contact.email + '</h3>');
+});
+        </script>
+    </body>
+</html>

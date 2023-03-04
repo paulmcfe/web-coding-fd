@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calling a function when the &lt;script&gt; tag is parsed</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+function displayGreeting() {
+    var currentHour = new Date().getHours();
+    if (currentHour < 12) {
+        console.log("Good morning!");
+    } else {
+        console.log("Good day!");
+    }
+}
+displayGreeting();
+        </script>
+    </body>
+</html>

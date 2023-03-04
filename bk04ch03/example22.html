@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The selectable interaction</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 40rem;
+    margin: 1rem;
+    font-family: Verdana, serif;
+    font-size: 1.25rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+#selectable-list .ui-selecting {
+    background-color: #ddd;
+}
+
+#selectable-list .ui-selected {
+    background-color: #aaa;
+}
+        </style>
+    </head>
+    <body>
+        
+<p>
+Place the mouse pointer inside the list and then lasso the items you want to select. Alternatively, hold down Ctrl (Windows) or Cmd (Mac) and click each item.
+</p>
+<p>
+<span id="select-div">You selected:</span>
+</p>
+
+<ul id="selectable-list">
+<li id="fruit1">Apples</li>
+<li id="fruit2">Bananas</li>
+<li id="fruit3">Peaches</li>
+<li id="fruit4">Kumquats</li>
+</ul>
+        <script>
+            
+$('#selectable-list').selectable(
+    {
+        tolerance: 'touch',
+        selecting: function(event, ui) {
+            $('#select-div').text('You selected: ' + ui.selecting.innerText);
+        },
+        unselecting: function(event, ui) {
+            $('#select-div').text('You unselected: ' + ui.unselecting.innerText);
+        }
+    }
+);
+        </script>
+    </body>
+</html>

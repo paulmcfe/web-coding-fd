@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Extracting Information About a Date</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var timeNow = new Date();
+var hoursNow = timeNow.getHours();
+var minutesNow = timeNow.getMinutes();
+var message = "It's ";
+var hoursText;
+
+if (minutesNow <= 30) {
+    message += minutesNow + " minutes past ";
+    hoursText = hoursNow;
+} else {
+    message += (60 - minutesNow) + " minutes before ";
+    hoursText = hoursNow + 1;
+}
+
+if (hoursNow == 0 && minutesNow <= 30) {
+    message += "midnight.";
+} else if (hoursNow == 11 && minutesNow > 30) {
+    message += "noon.";
+} else if (hoursNow < 12) {
+    message += hoursText + " in the morning.";
+} else if (hoursNow == 12 && minutesNow <= 30) {
+    message += "noon.";
+} else if (hoursNow < 18) {
+    message += parseInt(hoursText - 12) + " in the afternoon.";
+} else if (hoursNow == 23 && minutesNow > 30) {
+    message += "midnight.";
+} else {
+    message += parseInt(hoursText - 12) + " in the evening.";
+}
+document.getElementById("output").innerHTML = message;
+        </script>
+    </body>
+</html>

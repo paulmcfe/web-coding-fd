@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Converting getmonth() into a month name (function method)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+function monthName(monthValue) {
+    switch (monthValue) {
+        case 0 : return "January";
+        case 1 : return "February";
+        case 2 : return "March";
+        case 3 : return "April";
+        case 4 : return "May";
+        case 5 : return "June";
+        case 6 : return "July";
+        case 7 : return "August";
+        case 8 : return "September";
+        case 9 : return "October";
+        case 10 : return "November";
+        case 11 : return "December";
+    }
+}
+
+var dateNow = new Date();
+var monthNow = dateNow.getMonth();
+document.getElementById("output").innerHTML = "getMonth() is " + monthNow + "; the name is " + monthName(monthNow);
+        </script>
+    </body>
+</html>

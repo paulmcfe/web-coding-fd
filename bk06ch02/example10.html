@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Setting a radio button state</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 25rem;
+    margin: 1rem;
+}
+
+div {
+    margin: .5rem 0 0 1rem;
+}
+
+button {
+    margin: .75rem 0 0 1rem;
+    padding: .25rem;
+    border-radius: 5px;
+}
+        </style>
+    </head>
+    <body>
+        
+<form>
+<fieldset>
+    <legend>
+        Select a delivery method
+    </legend>
+    <div>
+        <input type="radio" id="carrier-pigeon" name="delivery" value="pigeon" checked>
+        <label for="carrier-pigeon">Carrier pigeon</label>
+    </div>
+    <div>
+        <input type="radio" id="pony-express" name="delivery" value="pony" aria-label="Pony express delivery option">
+        <label for="pony-express">Pony express</label>
+    </div>
+    <div>
+        <input type="radio" id="snail-mail" name="delivery" value="postal">
+        <label for="snail-mail">Snail mail</label>
+    </div>
+    <div>
+        <input type="radio" id="some-punk" name="delivery" value="bikecourier">
+        <label for="some-punk">Some punk on a bike</label>
+    </div>
+<button id="reset-radios" type="button">
+    Reset
+</button>
+</fieldset>
+</form>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('#reset-radios').click(function() {
+        $('input[name=delivery]').first().prop('checked', true);
+    });
+});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The substring() method</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+pre,
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<pre>
+Web Coding and Development for Dummies
+01234567890123456789012345678901234567
+</pre>
+
+<div id="output">
+</div>
+        <script>
+            
+var bookName = "Web Coding and Development for Dummies";
+
+var str = "substring(0, 10) = " + bookName.substring(0, 10) + "<br>";
+str += "substring(11, 14) = " + bookName.substring(11, 14) + "<br>";
+str += "substring(31) = " + bookName.substring(31);
+
+document.getElementById("output").innerHTML = str;
+        </script>
+    </body>
+</html>

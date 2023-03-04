@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Performing Date Calculations</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var myDate = new Date();
+var myYear = myDate.getFullYear() + 5;
+myDate.setFullYear(myYear + 5);
+document.getElementById("output").innerHTML = myDate;
+        </script>
+    </body>
+</html>

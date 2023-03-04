@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using while() Loops (second example)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var sum = 0;
+var num = prompt("Type a number or click Cancel:", 1);
+while (num != null) {
+    sum += Number(num);
+    num = prompt("Type a number or click Cancel:", 1);
+}
+console.log("The total of your numbers is " + sum);
+        </script>
+    </body>
+</html>

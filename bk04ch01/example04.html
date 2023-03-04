@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Removing an element</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+<h3>Section 1</h3>
+<h3>Section 2</h3>
+<h3 class="temp">Section A</h3>
+<h3 class="temp">Section B</h3>
+<h3>Section 3</h3>
+
+
+        <script>
+            
+$(document).ready(function() {
+    // Remove those h3 elements that have class "temp"
+    $('h3').remove('.temp');
+});
+        </script>
+    </body>
+</html>

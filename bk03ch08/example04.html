@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The charat() method</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+pre,
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+// Set up an array of test strings
+var stringArray = new Array(4);
+stringArray[0] = "Not this one.";
+stringArray[1] = "Not this one, either.";
+stringArray[2] = "1. Step one.";
+stringArray[3] = "Shouldn't get this far.";
+
+var firstChar;
+
+// Loop through the array
+for (var i = 0; i < 4; i++) {
+    
+    // Get the first character of the string;
+    firstChar = stringArray[i].charAt(0);
+    
+    // If it's a number, break because that's the one we want
+    if (!isNaN(firstChar)) { break }
+}
+
+document.getElementById("output").innerHTML = "Here's the one: \"" + stringArray[i] + "\"";
+        </script>
+    </body>
+</html>

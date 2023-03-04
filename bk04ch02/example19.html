@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Example: creating collapsible content</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 40rem;
+    margin: 1rem;
+    font-family: Verdana, sans-serif;
+    color: #222;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+.word {
+    margin-top: 1rem;
+}
+
+.sentence {
+    display: none;
+    margin: .5rem 1rem;
+    font-style: italic;
+    color: #666;
+}
+        </style>
+    </head>
+    <body>
+        
+<header>
+    <h1>Some Food Words to Chew On</h1>
+</header>
+<main>
+    <p>
+        Click a word or its definition to see that term’s sample sentence.
+    </p>
+<section id="alamode" class="word">
+    <b>à la mode</b>  (al·uh·MODE, adjective). Describes a dish that’s served with ice cream.
+    <p class="sentence">
+        Give her a big spoon and a piece of apple pie <b>à la mode</b> the size of her head, and Moira had her own little slice of heaven.
+    </p>
+</section>
+<section id="appetizer" class="word">
+    <b>appetizer</b> (AP·uh·tye·zur, noun). Food or drink that’s served before the main meal and is meant to stimulate the appetite.
+    <p class="sentence">
+        A slow eater, Karen was only halfway through her salad <b>appetizer</b> when the waiter showed up with the main course.
+    </p>
+</section>
+<section id="comestible" class="word">
+    <b>comestible</b> (kuh·MES·tuh·bul, noun). An item that can be eaten as food.
+    <p class="sentence">
+        After picking up bread, meat, cheese, and a few other <b>comestibles</b>, Deirdre was ready for the weekend-long Three Stooges festival.
+    </p>
+</section>
+<section id="cuisine" class="word">
+    <b>cuisine</b> (kwi·ZEEN, noun). A style of cooking as well as the food cooked in that style.
+    <p class="sentence">
+        His local restaurant was supposed to specialize in French <b>cuisine</b>, so Sean wondered why they didn’t serve french fries.
+    </p>
+</section>
+<section id="epicure" class="word">
+    <b>epicure</b>  (EP·uh·kyoor, noun). A person with sophisticated tastes, especially when it comes to food and wine.
+    <p class="sentence">
+        Being able to tell beef stroganoff from beef Wellington and a Bordeaux from a Beaujolais convinced Dominic that he was quite the <b>epicure</b>.
+    </p>
+</section>
+<section id="ingest" class="word">
+    <b>ingest</b>  (in·JEST, verb). To take food into the body.
+    <p class="sentence">
+        Not at all hungry, but also unwilling to displease his wife, Mr. Tortellini <b>ingested</b> her spaghetti with grim determination.
+    </p>
+</section>
+<section id="nosh" class="word">
+    <b>nosh</b>  (nawsh, verb). To eat a light meal or a snack.
+    <p class="sentence">
+        Wanda would guiltily <b>nosh</b> on a pepperoni stick before going in to her vegetarian cooking class.
+    </p>
+</section>
+</main>
+
+
+        <script>
+            
+$('.word').click(function(e) {
+    var wordID = e.target.id;
+    $('#' + wordID + ' > p').slideToggle('slow');
+});
+        </script>
+    </body>
+</html>

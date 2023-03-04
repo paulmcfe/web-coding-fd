@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Handling Form Events</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 25rem;
+    margin: 1rem;
+}
+
+div {
+    margin: .5rem 0 0 1rem;
+}
+
+label {
+    margin: 1.5rem 0 .5rem 0;
+}
+
+.output {
+    display: none;
+}
+        </style>
+    </head>
+    <body>
+        
+<form>
+    <div>
+        <label for="user">Username:</label>
+        <input id="user" type="text" name="username">
+    </div>
+    <div>
+        <label for="pwd">Password:</label>
+        <input id="pwd" type="password" name="password">
+    </div>
+</form>
+
+<div class="output">
+    Thanks for clicking the form!
+</div>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('form').click(function() {
+        $('.output').css('display', 'block').fadeOut(2000);
+    });
+});
+        </script>
+    </body>
+</html>

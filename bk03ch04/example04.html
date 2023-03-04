@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nesting multiple if() statements</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+// Get the current hour of the day
+var currentHour = new Date().getHours()
+
+var greeting;
+if (currentHour < 12) {
+    greeting = "Good morning!";
+}
+else if (currentHour < 18) {
+    greeting = "Good afternoon!";
+}
+else {
+    greeting = "Good evening!";
+}
+console.log(greeting);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exiting a loop using the break statement (guessing game)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var numberToGuess = Math.ceil(Math.random() * 10);
+var promptMessage = "Guess a number between 1 and 10:";
+var totalGuesses = 1;
+var guess;
+
+do {
+    guess = Number(prompt(promptMessage, ""));
+    if (guess === null) {
+        break;
+    }
+    else if (guess === numberToGuess) {
+        alert("You guessed it in " + totalGuesses + 
+              (totalGuesses === 1 ? " try." : " tries."));
+        break;
+    }
+    else if (guess < numberToGuess) {
+        promptMessage = "Sorry, your guess was too low. Try again:";
+    }
+    else {
+        promptMessage = "Sorry, your guess was too high. Try again:";
+    }
+    totalGuesses++;
+}
+while (true);
+        </script>
+    </body>
+</html>

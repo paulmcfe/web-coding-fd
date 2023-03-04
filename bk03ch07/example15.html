@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ordering array elements: sort()</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+// This function sorts numbers from lowest to highest
+function numericSort(a, b) {
+    return (a - b);
+}
+
+var myArray = [3, 5, 1, 6, 2, 4];
+
+// Write the array before sorting it
+var str = "myArray (before sorting): " + myArray + "<br>";
+
+// Sort the array
+myArray.sort(numericSort);
+
+// Write the array after sorting it
+str+= "myArray (after sorting): " + myArray;
+
+document.getElementById('output').innerHTML = str;
+        </script>
+    </body>
+</html>

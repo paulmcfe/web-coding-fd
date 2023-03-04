@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Determining a person's age</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var userAge;
+
+// Set the birth date: year, month, and day
+var userYear = 1990;
+var userMonth = 7;
+var userDay = 23;
+
+// Make a Date object and change it
+// to the user's birthday this year
+var birthdayDate = new Date();
+birthdayDate.setMonth(userMonth);
+birthdayDate.setDate(userDay);
+
+// Store the current date
+var currentDate = new Date();
+var currentYear = currentDate.getFullYear();
+
+// Check to see if the birthday has yet to occur this year
+if (currentDate < birthdayDate) {
+    userAge = currentYear - userYear - 1;
+} else {
+    userAge = currentYear - userYear;
+}
+
+document.getElementById("output").innerHTML = "You are " + userAge + " years old.";
+        </script>
+    </body>
+</html>

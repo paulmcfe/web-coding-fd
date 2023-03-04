@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Declaring and populating an array at the same time (Array() constructor)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+// Declare the array
+var dogPhotos = new Array("dog-1", "dog-2", "dog-3", "dog-4", "dog-5");
+
+// Display an example
+document.getElementById('output').innerHTML = '/images/' + dogPhotos[1] + '.png';
+        </script>
+    </body>
+</html>

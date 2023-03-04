@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Setting the type size</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+body {
+    margin: 2rem;
+    font-size: 16px;
+}
+
+article {
+    font-size: 1.5em;
+}
+
+section {
+    font-size: 1.25em;
+}
+        </style>
+    </head>
+    <body>
+        
+<p>
+This text takes its size from the <code>&lt;body&gt;</code> tag, so it's 16px.
+</p>
+<article>
+This text also gets its default size from the <code>&lt;body&gt;</code> tag, which means 1em here is equal to 16px. The <code>article</code> style rule sets the text size at 1.5em, which means 1.5 times 16px, or 24px.
+<section>
+This text gets its default size from the <code>&lt;article&gt;</code> tag, which means 1em here is equal to 24px. The <code>section</code> style rule sets the text size at 1.25em, which means 1.25 times 24px, or 30px.
+</section>
+</article>
+        <script>
+            
+
+        </script>
+    </body>
+</html>

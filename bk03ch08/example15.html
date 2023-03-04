@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Determining the day of the week for any date</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+var dayNames = ["Sunday","Monday","Tuesday",
+"Wednesday","Thursday","Friday","Saturday"];
+
+// Set the year, month, and day
+var userYear = 2018;
+var userMonth = 11;
+var userDay = 31;
+
+// Make a date object and then use the data to change the date
+var userDate = new Date();
+userDate.setFullYear(userYear);
+userDate.setMonth(userMonth);
+userDate.setDate(userDay);
+
+// Convert the numbers into names
+var dayName = dayNames[userDate.getDay()];
+var monthName = monthNames[userDate.getMonth()];
+
+// Display the message
+document.getElementById("output").innerHTML = "The date you entered was: " +  monthName + " " + userDay + ", " + userYear + "<br>The day of the week is: " + dayName;
+        </script>
+    </body>
+</html>

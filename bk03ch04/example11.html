@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using for() Loops (decrement example)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var ordinal, color;
+for (var rank = 3; rank >= 1; rank--) {
+    switch (rank) {
+        case 1:
+            ordinal = "first";
+            break;
+        case 2:
+            ordinal = "second";
+            break;
+        case 3:
+            ordinal = "third";
+    }
+    color = prompt("What is your " + ordinal + "-favorite CSS color?", "");
+    console.log(rank + ". " + color);
+}
+        </script>
+    </body>
+</html>

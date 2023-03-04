@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sending data to the server</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+.align-left {
+    text-align: left;
+}
+        
+.align-right {
+    text-align: right;
+    width: 75px;
+}
+        </style>
+    </head>
+    <body>
+        
+<header>
+</header>
+<nav>
+</nav>
+
+<main id="category-output">
+</main>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('#category-output').load('php/get-category.php', {category: 1});
+});
+        </script>
+    </body>
+</html>

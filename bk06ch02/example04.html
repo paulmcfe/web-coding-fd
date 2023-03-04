@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Setting a text field value</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 50rem;
+    margin: 1rem;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 1.5rem 0;
+}
+
+div {
+    margin-top: 1rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<form>
+<label>
+Type a URL with mixed uppercase and lowercase <br>
+characters, then press Enter/Return:<br>
+<input id="homepage-field" type="url" name="homepage" value="HTTP://etc" size="30">
+</label>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('form').submit(function(e) {
+        var homepageURL = $('#homepage-field').val();
+        $('#homepage-field').val(homepageURL.toLowerCase());
+ 
+       // Prevent the form from submitting
+        e.preventDefault();
+    });
+});
+        </script>
+    </body>
+</html>

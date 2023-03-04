@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using for() Loops (second example)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var sum = 0;
+var num, ordinal;
+for (var counter = 1; counter < 4; counter++) {
+    switch (counter) {
+        case 1:
+            ordinal = "first";
+            break;
+        case 2:
+            ordinal = "second";
+            break;
+        case 3:
+            ordinal = "third";
+    }
+    num = prompt("Enter the " + ordinal + " number:", 1);
+    sum += Number(num);
+}
+console.log("The average is " + sum / 3);
+        </script>
+    </body>
+</html>

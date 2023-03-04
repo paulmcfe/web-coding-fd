@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Working with global scope</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var myMessage;
+myMessage = "I've got global scope!";
+
+function C() {
+    console.log("Function C: " + myMessage);
+}
+
+C();
+console.log("Outside the function: " + myMessage);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Getting the checkbox state</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 50rem;
+    margin: 1rem;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 1.5rem 0;
+}
+
+div {
+    margin-top: 1rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<form>
+    <label>
+        <input id="autosave" type="checkbox" name="autosave">
+        Autosave this project?
+    </label>
+</form>
+
+<div id="output">
+</div>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('#autosave').click(function() {
+        var autosaveState = $('#autosave').prop('checked');
+        var msg = 'The Autosave feature is now ';
+        if (autosaveState) {
+            msg += 'on';
+        } else {
+            msg += 'off';
+        }
+        $('#output').html(msg);
+    });
+});
+        </script>
+    </body>
+</html>

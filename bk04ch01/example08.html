@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Working with width and height: a better method</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+#my-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 25vw;
+    margin: 1rem;
+    font-family: Verdana, serif;
+    font-size: 2rem;
+    color: lemonchiffon;
+    background-color: maroon;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="my-div">
+Hello World!
+</div>
+
+
+        <script>
+            
+$(document).ready(function() {
+    var currWidth = $('#my-div').width();
+    var newWidth = currWidth + 100;
+    $('#my-div').width(newWidth);
+});
+        </script>
+    </body>
+</html>

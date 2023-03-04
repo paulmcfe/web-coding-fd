@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using a timeout to perform a future action once</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+// Create a message
+var str = "Hello World!";
+
+// Set the timeout
+var timeoutId = setTimeout(logIt, 2000, str);
+
+// Run this function when the timeout occurs
+function logIt(msg) {
+    
+    // Display the message
+    console.log(msg);
+}
+        </script>
+    </body>
+</html>

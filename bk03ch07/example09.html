@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Creating a string from an array's elements: join()</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var array1 = new Array("Make", "this", "a", "sentence.");
+var array2 = new Array("antid", "isest", "ablis", "hment", "arian", "ism");
+var array3 = new Array("John", "Paul", "George", "Ringo");
+var string1 = array1.join(" ");
+var string2 = array2.join("");
+var string3 = array3.join();
+
+document.getElementById('output').innerHTML = string1 + '<br>' + string2 + '<br>' + string3;
+        </script>
+    </body>
+</html>

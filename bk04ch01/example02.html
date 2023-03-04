@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Replacing an element's HTML</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+$(document).ready(function() {
+    $('body').append('<header></header>');
+    $('header').append('<h2>This is the header.</h2>');
+
+    // Replace the header content
+    $('header').html('<h1>No, <em>this</em> is the header!</h1>');
+});
+        </script>
+    </body>
+</html>

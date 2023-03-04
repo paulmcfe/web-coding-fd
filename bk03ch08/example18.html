@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculating the days between two dates</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+function daysBetween(date1, date2) {
+
+    // The number of milliseconds in one day
+    var ONEDAY = 1000 * 60 * 60 * 24;
+
+    // Convert both dates to milliseconds
+    var date1Ms = date1.getTime();
+    var date2Ms = date2.getTime();
+
+    // Calculate the difference in milliseconds
+    var differenceMs = Math.abs(date1Ms - date2Ms);
+
+    // Convert to days and return
+    return Math.round(differenceMs/ONEDAY);
+}
+document.getElementById("output").innerHTML = daysBetween(new Date(), new Date("2017, 12, 25"));
+        </script>
+    </body>
+</html>

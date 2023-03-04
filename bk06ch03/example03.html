@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Setting maximum and minimum values on a numeric field</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 25rem;
+    margin: 2rem;
+}
+
+div {
+    margin: .5rem 0 0 1rem;
+}
+
+label {
+    display: block;
+}
+
+button {
+    padding: .25rem;
+    border-radius: 5px;
+    font-size: .8rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<form>
+    <div>
+        <label for="loan-term">Loan term (years):</label>
+        <input id="loan-term" 
+               type="number" 
+               placeholder="3-25"
+               min="3"
+               max="25">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+        <script>
+            
+
+        </script>
+    </body>
+</html>

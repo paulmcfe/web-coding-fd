@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Preventing the default event action</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+a {
+    display: inline-block;
+    margin: 1rem 1rem;
+}
+
+div {
+    margin-left: 1rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<a href="http://wiley.com/">Wiley</a>
+<a href="http://wordspy.com/">Word Spy</a>
+<a href="http://webcodingplayground.io/">Web Coding Playground</a>
+
+<div id="output">
+    Link URL:
+<div>
+        <script>
+            
+$('a').click(function(e) {
+    e.preventDefault();
+    strURL = e.target.href
+    $('#output').text('Link URL: ' + strURL);
+});
+        </script>
+    </body>
+</html>

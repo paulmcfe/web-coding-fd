@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The resizable interaction</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 40rem;
+    margin: 1rem;
+}
+
+p {
+    margin: 1rem 0;
+    font-family: Verdana, serif;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<p>
+Resize the image by dragging the right edge, bottom edge, or bottom-right corner
+</p>
+<img src="/images/image27-thumbnail.jpg">
+<p>
+<span id="resize-div"></span>
+</p>
+        <script>
+            
+$('img').resizable(
+    {
+        handles: 'e, se, s',
+        minWidth: 50,
+        minHeight: 25,
+        resize: function(event, ui) {
+            $('#resize-div').text('New width: ' + ui.size.width + '; New height: ' + ui.size.height);
+        }
+    }
+);
+        </script>
+    </body>
+</html>

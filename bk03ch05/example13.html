@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Avoiding infinite recursion</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var currentCall = 1;
+var maximumCalls = 3;
+
+recursionTest();
+
+function recursionTest() {
+    if (currentCall <= maximumCalls) {
+        console.log(currentCall);
+        currentCall++;
+        recursionTest();
+    }
+}
+        </script>
+    </body>
+</html>

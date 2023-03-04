@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Color Keywords</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+body {
+    margin: 2rem;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+.css-color {
+    width: 400px;
+    border-bottom: 1px solid dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-text {
+    background-color: black;
+    color: gainsboro;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 11px;
+    width: 150px;
+}
+.swatch {
+    flex: 1 0 100px;
+    padding: 20px 0;
+}
+.color-keyword, .rgb-code {
+    flex: 1 0 33%;  
+    padding-left: 10px;
+    min-width: 125px;
+    color: black;
+    font-size: 14px;
+    font-family: monospace;
+}
+        </style>
+    </head>
+    <body>
+        
+<div class="flex-container">
+<div class="css-color"><div class="header-text" style="width: 100px;">Color</div><div class="header-text">Keyword</div><div class="header-text">RGB Value</div></div>
+<div class="css-color"><div style="background-color: lightpink" class="swatch"></div><div class="color-keyword">lightpink</div><div class="rgb-code">#ffb6c1</div></div>
+<div class="css-color"><div style="background-color: pink" class="swatch"> </div><div class="color-keyword">pink</div><div class="rgb-code">#ffc0cb</div></div>
+<div class="css-color"><div style="background-color: crimson" class="swatch"></div><div class="color-keyword">crimson</div><div class="rgb-code">#dc143c</div></div>
+<div class="css-color"><div style="background-color: lavenderblush" class="swatch"></div><div class="color-keyword">lavenderblush</div><div class="rgb-code">#fff0f5</div></div>
+<div class="css-color"><div style="background-color: palevioletred" class="swatch"></div><div class="color-keyword">palevioletred</div><div class="rgb-code">#db7093</div></div>
+<div class="css-color"><div style="background-color: hotpink" class="swatch"></div><div class="color-keyword">hotpink</div><div class="rgb-code">#ff69b4</div></div>
+<div class="css-color"><div style="background-color: deeppink" class="swatch"></div><div class="color-keyword">deeppink</div><div class="rgb-code">#ff1493</div></div>
+<div class="css-color"><div style="background-color: mediumvioletred" class="swatch"></div><div class="color-keyword">mediumvioletred</div><div class="rgb-code">#c71585</div></div>
+<div class="css-color"><div style="background-color: orchid" class="swatch"></div><div class="color-keyword">orchid</div><div class="rgb-code">#da70d6</div></div>
+<div class="css-color"><div style="background-color: thistle" class="swatch"></div><div class="color-keyword">thistle</div><div class="rgb-code">#d8bfd8</div></div>
+<div class="css-color"><div style="background-color: plum" class="swatch"></div><div class="color-keyword">plum</div><div class="rgb-code">#dda0dd</div></div>
+<div class="css-color"><div style="background-color: violet" class="swatch"></div><div class="color-keyword">violet</div><div class="rgb-code">#ee82ee</div></div>
+<div class="css-color"><div style="background-color: magenta" class="swatch"></div><div class="color-keyword">magenta</div><div class="rgb-code">#ff00ff</div></div>
+<div class="css-color"><div style="background-color: fuchsia" class="swatch"></div><div class="color-keyword">fuchsia</div><div class="rgb-code">#ff00ff</div></div>
+<div class="css-color"><div style="background-color: darkmagenta" class="swatch"></div><div class="color-keyword">darkmagenta</div><div class="rgb-code">#8b008b</div></div>
+<div class="css-color"><div style="background-color: purple" class="swatch"></div><div class="color-keyword">purple</div><div class="rgb-code">#800080</div></div>
+<div class="css-color"><div style="background-color: rebeccapurple" class="swatch"></div><div class="color-keyword">rebeccapurple</div><div class="rgb-code">#663399</div></div>
+<div class="css-color"><div style="background-color: mediumorchid" class="swatch"></div><div class="color-keyword">mediumorchid</div><div class="rgb-code">#ba55d3</div></div>
+<div class="css-color"><div style="background-color: darkviolet" class="swatch"></div><div class="color-keyword">darkviolet</div><div class="rgb-code">#9400d3</div></div>
+<div class="css-color"><div style="background-color: darkorchid" class="swatch"></div><div class="color-keyword">darkorchid</div><div class="rgb-code">#9932cc</div></div>
+<div class="css-color"><div style="background-color: indigo" class="swatch"></div><div class="color-keyword">indigo</div><div class="rgb-code">#4b0082</div></div>
+<div class="css-color"><div style="background-color: blueviolet" class="swatch"></div><div class="color-keyword">blueviolet</div><div class="rgb-code">#8a2be2</div></div>
+<div class="css-color"><div style="background-color: mediumpurple" class="swatch"></div><div class="color-keyword">mediumpurple</div><div class="rgb-code">#9370db</div></div>
+<div class="css-color"><div style="background-color: mediumslateblue" class="swatch"></div><div class="color-keyword">mediumslateblue</div><div class="rgb-code">#7b68ee</div></div>
+<div class="css-color"><div style="background-color: slateblue" class="swatch"></div><div class="color-keyword">slateblue</div><div class="rgb-code">#6a5acd</div></div>
+<div class="css-color"><div style="background-color: darkslateblue" class="swatch"></div><div class="color-keyword">darkslateblue</div><div class="rgb-code">#483d8b</div></div>
+<div class="css-color"><div style="background-color: lavender" class="swatch"></div><div class="color-keyword">lavender</div><div class="rgb-code">#e6e6fa</div></div>
+<div class="css-color"><div style="background-color: ghostwhite" class="swatch"></div><div class="color-keyword">ghostwhite</div><div class="rgb-code">#f8f8ff</div></div>
+<div class="css-color"><div style="background-color: blue" class="swatch"></div><div class="color-keyword">blue</div><div class="rgb-code">#0000ff</div></div>
+<div class="css-color"><div style="background-color: mediumblue" class="swatch"></div><div class="color-keyword">mediumblue</div><div class="rgb-code">#0000cd</div></div>
+<div class="css-color"><div style="background-color: midnightblue" class="swatch"></div><div class="color-keyword">midnightblue</div><div class="rgb-code">#191970</div></div>
+<div class="css-color"><div style="background-color: darkblue" class="swatch"></div><div class="color-keyword">darkblue</div><div class="rgb-code">#00008b</div></div>
+<div class="css-color"><div style="background-color: navy" class="swatch"></div><div class="color-keyword">navy</div><div class="rgb-code">#000080</div></div>
+<div class="css-color"><div style="background-color: royalblue" class="swatch"></div><div class="color-keyword">royalblue</div><div class="rgb-code">#4169e1</div></div>
+<div class="css-color"><div style="background-color: cornflowerblue" class="swatch"></div><div class="color-keyword">cornflowerblue</div><div class="rgb-code">#6495ed</div></div>
+<div class="css-color"><div style="background-color: lightsteelblue" class="swatch"></div><div class="color-keyword">lightsteelblue</div><div class="rgb-code">#b0c4de</div></div>
+<div class="css-color"><div style="background-color: lightslategray" class="swatch"></div><div class="color-keyword">lightslategray</div><div class="rgb-code">#778899</div></div>
+<div class="css-color"><div style="background-color: slategray" class="swatch"></div><div class="color-keyword">slategray</div><div class="rgb-code">#708090</div></div>
+<div class="css-color"><div style="background-color: dodgerblue" class="swatch"></div><div class="color-keyword">dodgerblue</div><div class="rgb-code">#1e90ff</div></div>
+<div class="css-color"><div style="background-color: aliceblue" class="swatch"></div><div class="color-keyword">aliceblue</div><div class="rgb-code">#f0f8ff</div></div>
+<div class="css-color"><div style="background-color: steelblue" class="swatch"></div><div class="color-keyword">steelblue</div><div class="rgb-code">#4682b4</div></div>
+<div class="css-color"><div style="background-color: lightskyblue" class="swatch"></div><div class="color-keyword">lightskyblue</div><div class="rgb-code">#87cefa</div></div>
+<div class="css-color"><div style="background-color: skyblue" class="swatch"></div><div class="color-keyword">skyblue</div><div class="rgb-code">#87ceeb</div></div>
+<div class="css-color"><div style="background-color: deepskyblue" class="swatch"></div><div class="color-keyword">deepskyblue</div><div class="rgb-code">#00bfff</div></div>
+<div class="css-color"><div style="background-color: lightblue" class="swatch"></div><div class="color-keyword">lightblue</div><div class="rgb-code">#add8e6</div></div>
+<div class="css-color"><div style="background-color: powderblue" class="swatch"></div><div class="color-keyword">powderblue</div><div class="rgb-code">#b0e0e6</div></div>
+<div class="css-color"><div style="background-color: cadetblue" class="swatch"></div><div class="color-keyword">cadetblue</div><div class="rgb-code">#5f9ea0</div></div>
+<div class="css-color"><div style="background-color: azure" class="swatch"></div><div class="color-keyword">azure</div><div class="rgb-code">#f0ffff</div></div>
+<div class="css-color"><div style="background-color: lightcyan" class="swatch"></div><div class="color-keyword">lightcyan</div><div class="rgb-code">#e0ffff</div></div>
+<div class="css-color"><div style="background-color: paleturquoise" class="swatch"></div><div class="color-keyword">paleturquoise</div><div class="rgb-code">#afeeee</div></div>
+<div class="css-color"><div style="background-color: cyan" class="swatch"></div><div class="color-keyword">cyan</div><div class="rgb-code">#00ffff</div></div>
+<div class="css-color"><div style="background-color: aqua" class="swatch"></div><div class="color-keyword">aqua</div><div class="rgb-code">#00ffff</div></div>
+<div class="css-color"><div style="background-color: darkturquoise" class="swatch"></div><div class="color-keyword">darkturquoise</div><div class="rgb-code">#00ced1</div></div>
+<div class="css-color"><div style="background-color: darkslategray" class="swatch"></div><div class="color-keyword">darkslategray</div><div class="rgb-code">#2f4f4f</div></div>
+<div class="css-color"><div style="background-color: darkcyan" class="swatch"></div><div class="color-keyword">darkcyan</div><div class="rgb-code">#008b8b</div></div>
+<div class="css-color"><div style="background-color: teal" class="swatch"></div><div class="color-keyword">teal</div><div class="rgb-code">#008080</div></div>
+<div class="css-color"><div style="background-color: mediumturquoise" class="swatch"></div><div class="color-keyword">mediumturquoise</div><div class="rgb-code">#48d1cc</div></div>
+<div class="css-color"><div style="background-color: lightseagreen" class="swatch"></div><div class="color-keyword">lightseagreen</div><div class="rgb-code">#20b2aa</div></div>
+<div class="css-color"><div style="background-color: turquoise" class="swatch"></div><div class="color-keyword">turquoise</div><div class="rgb-code">#40e0d0</div></div>
+<div class="css-color"><div style="background-color: aquamarine" class="swatch"></div><div class="color-keyword">aquamarine</div><div class="rgb-code">#7fffd4</div></div>
+<div class="css-color"><div style="background-color: mediumaquamarine" class="swatch"></div><div class="color-keyword">mediumaquamarine</div><div class="rgb-code">#66cdaa</div></div>
+<div class="css-color"><div style="background-color: mediumspringgreen" class="swatch"></div><div class="color-keyword">mediumspringgreen</div><div class="rgb-code">#00fa9a</div></div>
+<div class="css-color"><div style="background-color: mintcream" class="swatch"></div><div class="color-keyword">mintcream</div><div class="rgb-code">#f5fffa</div></div>
+<div class="css-color"><div style="background-color: springgreen" class="swatch"></div><div class="color-keyword">springgreen</div><div class="rgb-code">#00ff7f</div></div>
+<div class="css-color"><div style="background-color: mediumseagreen" class="swatch"></div><div class="color-keyword">mediumseagreen</div><div class="rgb-code">#3cb371</div></div>
+<div class="css-color"><div style="background-color: seagreen" class="swatch"></div><div class="color-keyword">seagreen</div><div class="rgb-code">#2e8b57</div></div>
+<div class="css-color"><div style="background-color: honeydew" class="swatch"></div><div class="color-keyword">honeydew</div><div class="rgb-code">#f0fff0</div></div>
+<div class="css-color"><div style="background-color: lightgreen" class="swatch"></div><div class="color-keyword">lightgreen</div><div class="rgb-code">#90ee90</div></div>
+<div class="css-color"><div style="background-color: palegreen" class="swatch"></div><div class="color-keyword">palegreen</div><div class="rgb-code">#98fb98</div></div>
+<div class="css-color"><div style="background-color: darkseagreen" class="swatch"></div><div class="color-keyword">darkseagreen</div><div class="rgb-code">#8fbc8f</div></div>
+<div class="css-color"><div style="background-color: limegreen" class="swatch"></div><div class="color-keyword">limegreen</div><div class="rgb-code">#32cd32</div></div>
+<div class="css-color"><div style="background-color: lime" class="swatch"></div><div class="color-keyword">lime</div><div class="rgb-code">#00ff00</div></div>
+<div class="css-color"><div style="background-color: forestgreen" class="swatch"></div><div class="color-keyword">forestgreen</div><div class="rgb-code">#228b22</div></div>
+<div class="css-color"><div style="background-color: green" class="swatch"></div><div class="color-keyword">green</div><div class="rgb-code">#008000</div></div>
+<div class="css-color"><div style="background-color: darkgreen" class="swatch"></div><div class="color-keyword">darkgreen</div><div class="rgb-code">#006400</div></div>
+<div class="css-color"><div style="background-color: chartreuse" class="swatch"></div><div class="color-keyword">chartreuse</div><div class="rgb-code">#7fff00</div></div>
+<div class="css-color"><div style="background-color: lawngreen" class="swatch"></div><div class="color-keyword">lawngreen</div><div class="rgb-code">#7cfc00</div></div>
+<div class="css-color"><div style="background-color: greenyellow" class="swatch"></div><div class="color-keyword">greenyellow</div><div class="rgb-code">#adff2f</div></div>
+<div class="css-color"><div style="background-color: darkolivegreen" class="swatch"></div><div class="color-keyword">darkolivegreen</div><div class="rgb-code">#556b2f</div></div>
+<div class="css-color"><div style="background-color: yellowgreen" class="swatch"></div><div class="color-keyword">yellowgreen</div><div class="rgb-code">#9acd32</div></div>
+<div class="css-color"><div style="background-color: olivedrab" class="swatch"></div><div class="color-keyword">olivedrab</div><div class="rgb-code">#6b8e23</div></div>
+<div class="css-color"><div style="background-color: beige" class="swatch"></div><div class="color-keyword">beige</div><div class="rgb-code">#f5f5dc</div></div>
+<div class="css-color"><div style="background-color: lightgoldenrodyellow" class="swatch"></div><div class="color-keyword">lightgoldenrodyellow</div><div class="rgb-code">#fafad2</div></div>
+<div class="css-color"><div style="background-color: ivory" class="swatch"></div><div class="color-keyword">ivory</div><div class="rgb-code">#fffff0</div></div>
+<div class="css-color"><div style="background-color: lightyellow" class="swatch"></div><div class="color-keyword">lightyellow</div><div class="rgb-code">#ffffe0</div></div>
+<div class="css-color"><div style="background-color: yellow" class="swatch"></div><div class="color-keyword">yellow</div><div class="rgb-code">#ffff00</div></div>
+<div class="css-color"><div style="background-color: olive" class="swatch"></div><div class="color-keyword">olive</div><div class="rgb-code">#808000</div></div>
+<div class="css-color"><div style="background-color: darkkhaki" class="swatch"></div><div class="color-keyword">darkkhaki</div><div class="rgb-code">#bdb76b</div></div>
+<div class="css-color"><div style="background-color: lemonchiffon" class="swatch"></div><div class="color-keyword">lemonchiffon</div><div class="rgb-code">#fffacd</div></div>
+<div class="css-color"><div style="background-color: palegoldenrod" class="swatch"></div><div class="color-keyword">palegoldenrod</div><div class="rgb-code">#eee8aa</div></div>
+<div class="css-color"><div style="background-color: khaki" class="swatch"></div><div class="color-keyword">khaki</div><div class="rgb-code">#f0e68c</div></div>
+<div class="css-color"><div style="background-color: gold" class="swatch"></div><div class="color-keyword">gold</div><div class="rgb-code">#ffd700</div></div>
+<div class="css-color"><div style="background-color: cornsilk" class="swatch"></div><div class="color-keyword">cornsilk</div><div class="rgb-code">#fff8dc</div></div>
+<div class="css-color"><div style="background-color: goldenrod" class="swatch"></div><div class="color-keyword">goldenrod</div><div class="rgb-code">#daa520</div></div>
+<div class="css-color"><div style="background-color: darkgoldenrod" class="swatch"></div><div class="color-keyword">darkgoldenrod</div><div class="rgb-code">#b8860b</div></div>
+<div class="css-color"><div style="background-color: floralwhite" class="swatch"></div><div class="color-keyword">floralwhite</div><div class="rgb-code">#fffaf0</div></div>
+<div class="css-color"><div style="background-color: oldlace" class="swatch"></div><div class="color-keyword">oldlace</div><div class="rgb-code">#fdf5e6</div></div>
+<div class="css-color"><div style="background-color: wheat" class="swatch"></div><div class="color-keyword">wheat</div><div class="rgb-code">#f5deb3</div></div>
+<div class="css-color"><div style="background-color: moccasin" class="swatch"></div><div class="color-keyword">moccasin</div><div class="rgb-code">#ffe4b5</div></div>
+<div class="css-color"><div style="background-color: orange" class="swatch"></div><div class="color-keyword">orange</div><div class="rgb-code">#ffa500</div></div>
+<div class="css-color"><div style="background-color: papayawhip" class="swatch"></div><div class="color-keyword">papayawhip</div><div class="rgb-code">#ffefd5</div></div>
+<div class="css-color"><div style="background-color: blanchedalmond" class="swatch"></div><div class="color-keyword">blanchedalmond</div><div class="rgb-code">#ffebcd</div></div>
+<div class="css-color"><div style="background-color: navajowhite" class="swatch"></div><div class="color-keyword">navajowhite</div><div class="rgb-code">#ffdead</div></div>
+<div class="css-color"><div style="background-color: antiquewhite" class="swatch"></div><div class="color-keyword">antiquewhite</div><div class="rgb-code">#faebd7</div></div>
+<div class="css-color"><div style="background-color: tan" class="swatch"></div><div class="color-keyword">tan</div><div class="rgb-code">#d2b48c</div></div>
+<div class="css-color"><div style="background-color: burlywood" class="swatch"></div><div class="color-keyword">burlywood</div><div class="rgb-code">#deb887</div></div>
+<div class="css-color"><div style="background-color: bisque" class="swatch"></div><div class="color-keyword">bisque</div><div class="rgb-code">#ffe4c4</div></div>
+<div class="css-color"><div style="background-color: darkorange" class="swatch"></div><div class="color-keyword">darkorange</div><div class="rgb-code">#ff8c00</div></div>
+<div class="css-color"><div style="background-color: linen" class="swatch"></div><div class="color-keyword">linen</div><div class="rgb-code">#faf0e6</div></div>
+<div class="css-color"><div style="background-color: peru" class="swatch"></div><div class="color-keyword">peru</div><div class="rgb-code">#cd853f</div></div>
+<div class="css-color"><div style="background-color: peachpuff" class="swatch"></div><div class="color-keyword">peachpuff</div><div class="rgb-code">#ffdab9</div></div>
+<div class="css-color"><div style="background-color: sandybrown" class="swatch"></div><div class="color-keyword">sandybrown</div><div class="rgb-code">#f4a460</div></div>
+<div class="css-color"><div style="background-color: chocolate" class="swatch"></div><div class="color-keyword">chocolate</div><div class="rgb-code">#d2691e</div></div>
+<div class="css-color"><div style="background-color: saddlebrown" class="swatch"></div><div class="color-keyword">saddlebrown</div><div class="rgb-code">#8b4513</div></div>
+<div class="css-color"><div style="background-color: seashell" class="swatch"></div><div class="color-keyword">seashell</div><div class="rgb-code">#fff5ee</div></div>
+<div class="css-color"><div style="background-color: sienna" class="swatch"></div><div class="color-keyword">sienna</div><div class="rgb-code">#a0522d</div></div>
+<div class="css-color"><div style="background-color: lightsalmon" class="swatch"></div><div class="color-keyword">lightsalmon</div><div class="rgb-code">#ffa07a</div></div>
+<div class="css-color"><div style="background-color: coral" class="swatch"></div><div class="color-keyword">coral</div><div class="rgb-code">#ff7f50</div></div>
+<div class="css-color"><div style="background-color: orangered" class="swatch"></div><div class="color-keyword">orangered</div><div class="rgb-code">#ff4500</div></div>
+<div class="css-color"><div style="background-color: darksalmon" class="swatch"></div><div class="color-keyword">darksalmon</div><div class="rgb-code">#e9967a</div></div>
+<div class="css-color"><div style="background-color: tomato" class="swatch"></div><div class="color-keyword">tomato</div><div class="rgb-code">#ff6347</div></div>
+<div class="css-color"><div style="background-color: mistyrose" class="swatch"></div><div class="color-keyword">mistyrose</div><div class="rgb-code">#ffe4e1</div></div>
+<div class="css-color"><div style="background-color: salmon" class="swatch"></div><div class="color-keyword">salmon</div><div class="rgb-code">#fa8072</div></div>
+<div class="css-color"><div style="background-color: snow" class="swatch"></div><div class="color-keyword">snow</div><div class="rgb-code">#fffafa</div></div>
+<div class="css-color"><div style="background-color: lightcoral" class="swatch"></div><div class="color-keyword">lightcoral</div><div class="rgb-code">#f08080</div></div>
+<div class="css-color"><div style="background-color: rosybrown" class="swatch"></div><div class="color-keyword">rosybrown</div><div class="rgb-code">#bc8f8f</div></div>
+<div class="css-color"><div style="background-color: indianred" class="swatch"></div><div class="color-keyword">indianred</div><div class="rgb-code">#cd5c5c</div></div>
+<div class="css-color"><div style="background-color: red" class="swatch"></div><div class="color-keyword">red</div><div class="rgb-code">#ff0000</div></div>
+<div class="css-color"><div style="background-color: brown" class="swatch"></div><div class="color-keyword">brown</div><div class="rgb-code">#a52a2a</div></div>
+<div class="css-color"><div style="background-color: firebrick" class="swatch"></div><div class="color-keyword">firebrick</div><div class="rgb-code">#b22222</div></div>
+<div class="css-color"><div style="background-color: darkred" class="swatch"></div><div class="color-keyword">darkred</div><div class="rgb-code">#8b0000</div></div>
+<div class="css-color"><div style="background-color: maroon" class="swatch"></div><div class="color-keyword">maroon</div><div class="rgb-code">#800000</div></div>
+<div class="css-color"><div style="background-color: white" class="swatch"></div><div class="color-keyword">white</div><div class="rgb-code">#ffffff</div></div>
+<div class="css-color"><div style="background-color: whitesmoke" class="swatch"></div><div class="color-keyword">whitesmoke</div><div class="rgb-code">#f5f5f5</div></div>
+<div class="css-color"><div style="background-color: gainsboro" class="swatch"></div><div class="color-keyword">gainsboro</div><div class="rgb-code">#dcdcdc</div></div>
+<div class="css-color"><div style="background-color: lightgray" class="swatch"></div><div class="color-keyword">lightgray</div><div class="rgb-code">#d3d3d3</div></div>
+<div class="css-color"><div style="background-color: silver" class="swatch"></div><div class="color-keyword">silver</div><div class="rgb-code">#c0c0c0</div></div>
+<div class="css-color"><div style="background-color: darkgray" class="swatch"></div><div class="color-keyword">darkgray</div><div class="rgb-code">#a9a9a9</div></div>
+<div class="css-color"><div style="background-color: gray" class="swatch"></div><div class="color-keyword">gray</div><div class="rgb-code">#808080</div></div>
+<div class="css-color"><div style="background-color: dimgray" class="swatch"></div><div class="color-keyword">dimgray</div><div class="rgb-code">#696969</div></div>
+<div class="css-color"><div style="background-color: black" class="swatch"></div><div class="color-keyword">black</div><div class="rgb-code">#000000</div></div>
+</div>
+        <script>
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using Recursive Functions (second example)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var grossProfit = 100000;
+var netProfit;
+var profitSharingPercent = 0.1;
+
+// Here's the initial guess
+var profitSharing = grossProfit * profitSharingPercent;
+
+calculateProfitSharing (profitSharing);
+
+function calculateProfitSharing(guess) {
+
+    // First, calculate the new net profit
+    netProfit = grossProfit - guess;
+
+    // Now use that to guess the profit sharing value again
+    profitSharing = Math.ceil(netProfit * profitSharingPercent);
+
+    // Do we have a solution?
+    if ((netProfit + profitSharing) != grossProfit) {
+        // If not, plug it in again
+        calculateProfitSharing (profitSharing);
+    }
+}
+
+console.log("Gross Profit:\t" + grossProfit + "\nNet Profit: \t" + netProfit + "\nProfit Sharing:\t" + profitSharing);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Returning a subset of an array: slice()</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+var myArray = new Array("A", "B", "C", "D", "E", "F");
+var array1 = myArray.slice(0, 4);
+var array2 = myArray.slice(3);
+var array3 = myArray.slice(-3, -1);
+
+var str = "array1: " + array1 + "<br>";
+str += "array2: " + array2 + "<br>";
+str += "array3: " + array3;
+
+document.getElementById('output').innerHTML = str;
+        </script>
+    </body>
+</html>

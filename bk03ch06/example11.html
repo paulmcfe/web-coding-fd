@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adding a class to an element</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+body {
+    width: 500px;
+}
+
+.sectionText {
+    margin-top: .5rem;
+    color: green;
+    font-family: Verdana, sans-serif;
+}
+ div {
+    margin: .75rem 0
+}
+        </style>
+    </head>
+    <body>
+        
+<article>
+    <div>
+    The following <code>section</code> elements are direct children of an <code>article</code> element, so they get the class added: 
+    </div>
+    <section>
+    True terror is to wake up one morning and discover that your high school class is running the country.<br>
+    —Kurt Vonnegut
+    </section>
+    <section>
+    Magnetism, as you recall from physics class, is a powerful force that causes certain items to be attracted to refrigerators.<br>
+    —Dave Barry
+    </section>
+</article>
+    <div>
+    The following <code>section</code> element is not a direct child of an <code>article</code> element, so it doesn’t get the class added: 
+    </div>
+<section>
+    I wasn’t the class clown, but I wrote for him.<br>
+    —David Letterman
+</section>
+        <script>
+            
+var articleSections = document.querySelectorAll("article > section");
+for (var i = 0; i < articleSections.length; i++) {
+    articleSections[i].classList.add("sectionText");
+}
+        </script>
+    </body>
+</html>

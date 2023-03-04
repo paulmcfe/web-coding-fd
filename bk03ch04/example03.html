@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using the AND (??) and OR (||) operators</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var totalPrice = 11;
+var taxRate = 0.1;
+var retailPrice;
+if (taxRate >= 0 && taxRate < 1) {
+    retailPrice = totalPrice / (1 + taxRate);
+    console.log("The retail price is " + retailPrice);
+}
+else {
+    console.log("Please enter a tax rate between 0 and 1.");
+}
+        </script>
+    </body>
+</html>

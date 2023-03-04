@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The droppable interaction</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 40rem;
+    margin: 1rem;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+header img {
+    float: left;
+    margin-right: 1rem;
+    width: 150px;
+    height: auto;
+}
+
+header div {
+    float: right;
+    border: 1px solid black;
+    width: 200px;
+    height: 150px;
+}
+
+main {
+    clear: both;
+}
+p {
+    margin-top: 1rem;
+    font-family: Verdana, serif;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<header>
+    <img src="/images/image24-thumbnail.jpg" alt="News of the Word logo">
+    <div id="drop-div"></div>
+</header>
+<main>
+<p>
+Drag the image into the box
+</p>
+<p>
+Current position: <span id="drop-div">Outside the box.</span>
+</p>
+</main>
+        <script>
+            
+$('img').draggable({ opacity: .5 });
+
+$('#drop-div').droppable(
+    {
+        tolerance: 'intersect',
+        drop: function(event, ui) {
+            $('#drop-div').text("Dropped inside the box."); 
+        },
+        out: function(event, ui) {
+            $('#drop-div').text("Outside the box."); 
+        },
+        over: function(event, ui) {
+            $('#drop-div').text("Over the box.");
+        } 
+    }
+);
+        </script>
+    </body>
+</html>

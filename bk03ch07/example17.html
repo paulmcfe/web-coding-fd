@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ordering array elements: sort() (third example)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="output">
+</div>
+        <script>
+            
+// This function sorts characters from highest to lowest
+function reverseAlphaSort(a, b) {
+    if (a > b) { 
+        return -1
+    }
+    else if (a < b) { 
+        return 1
+    }
+    else {
+        return 0
+    }
+}
+
+var myArray = ["D", "Z", "M", "R", "A", "E", "X", "P"];
+
+// Write the array before sorting it
+var str = "myArray (before sorting): " + myArray + "<br>";
+
+// Sort the array
+myArray.sort(reverseAlphaSort);
+
+// Write the array after sorting it
+str += "myArray (after sorting): " + myArray;
+
+document.getElementById('output').innerHTML  = str;
+        </script>
+    </body>
+</html>

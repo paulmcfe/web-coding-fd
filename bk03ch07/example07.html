@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Creating Multidimensional Arrays</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+<h1>Creating Multidimensional Arrays</h1>
+<button onclick="changeColors(colorArray[0][0], colorArray[0][1])">
+    White Background, Black Text
+</button>
+<button onclick="changeColors(colorArray[1][0], colorArray[1][1])">
+    Alice Blue Background, Midnight Blue Text
+</button>
+<button onclick="changeColors(colorArray[2][0], colorArray[2][1])">
+    Honeydew Background, Dark Green Text
+</button>
+        <script>
+            
+var colorArray = new Array(3);
+colorArray[0] = ['white', 'black'];
+colorArray[1] = ['aliceblue', 'midnightblue'];
+colorArray[2] = ['honeydew', 'darkgreen'];
+
+function changeColors(newBackColor, newForeColor) {
+    document.body.style.backgroundColor = newBackColor;
+    document.body.style.color = newForeColor;
+}
+        </script>
+    </body>
+</html>

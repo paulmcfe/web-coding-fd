@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hiding and showing content with an accordion</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+.ui-accordion {
+    width: 400px;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="my-accordion">
+    <h6>Header A</h6>
+    <div>This is the content panel for Header A</div>
+    <h6>Header B</h6>
+    <div>This is the content panel for Header B</div>
+    <h6>Header C</h6>
+    <div>This is the content panel for Header C</div>
+</div>
+        <script>
+            
+$('#my-accordion').accordion({
+    collapsible: true
+});
+        </script>
+    </body>
+</html>

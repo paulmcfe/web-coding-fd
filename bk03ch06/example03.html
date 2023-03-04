@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using for()...in to loop through object properties (second example)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+// Initialize the message
+var msg = "Here are the property values for the location object:\n\n";
+
+// Loop through the object's properties
+for (var prop in location) {
+    msg +=  "location." + prop + " = " + location[prop] + "\n";
+}
+    
+// Display the message;
+console.log(msg);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using Recursive Functions (first example)</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+var counter = 0;
+addOne();
+
+function addOne() {
+    counter++;
+    if (confirm("counter is now " + counter + ". Add another one?")) {
+        addOne();
+    }
+}
+
+console.log("Counter ended up at " + counter);
+        </script>
+    </body>
+</html>

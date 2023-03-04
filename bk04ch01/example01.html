@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adding an element</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+
+        </style>
+    </head>
+    <body>
+        
+
+        <script>
+            
+$(document).ready(function() {
+    var domArray = ['<header></header>', '<nav></nav>', '<main></main>', '<footer></footer>'];
+    $('body').prepend(domArray);
+    $('header').append('<h1>This is the header.</h1>');
+    $('nav').append('Nav links will go here.');
+    $('main').append('<h2>This is the main part of the page.</h2>');
+    $('footer').append('This is the footer.');
+});
+        </script>
+    </body>
+</html>

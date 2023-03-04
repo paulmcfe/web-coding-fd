@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Getting data about the event</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem;
+}
+
+div {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+
+#key-output {
+    width: 100px;
+    padding: .5rem;
+    border: 1px solid black;
+}
+        </style>
+    </head>
+    <body>
+        
+<div>
+    Type a key:
+</div>
+<input id="key-input" type="text">
+<div>
+    Here's the code of the key you pressed:
+</div>
+<div id="key-output"> 
+</div>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('#key-input').focus();
+});
+
+$('#key-input').keypress(function(e) {
+    $('#key-output').text(e.which);
+});
+        </script>
+    </body>
+</html>

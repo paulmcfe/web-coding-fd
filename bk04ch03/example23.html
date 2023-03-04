@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The sortable interaction</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 45rem;
+    margin: 1rem;
+    font-family: Verdana, serif;
+    font-size: 1.25rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+#selectable-list .ui-selecting {
+    background-color: #ddd;
+}
+
+#selectable-list .ui-selected {
+    background-color: #aaa;
+}
+        </style>
+    </head>
+    <body>
+        
+<p>
+Change the order of the list items by dragging them up or down.
+</p>
+<p>
+<span id="sort-div">You’re sorting:</span>
+</p>
+
+<ul id="sortable-list">
+<li id="fruit1">Apples</li>
+<li id="fruit2">Bananas</li>
+<li id="fruit3">Peaches</li>
+<li id="fruit4">Kumquats</li>
+<li id="fruit5">Papayas</li>
+<li id="fruit6">Durians</li>
+</ul>
+        <script>
+            
+$('#sortable-list').sortable(
+    {
+        axis: 'y',
+        opacity: .5,
+        sort: function(event, ui) {
+            $('#sort-div').text('You’re sorting: ' + ui.item[0].innerText);
+        }
+    }
+);
+        </script>
+    </body>
+</html>

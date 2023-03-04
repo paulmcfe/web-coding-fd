@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Creating a navigation menu</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+.ui-menu {
+    width: 200px;
+}
+        </style>
+    </head>
+    <body>
+        
+<ul id="my-menu">
+    <li>
+        <div>Menu Item #1</div>
+    </li>
+    <li>
+        <div>Menu Item #2</div>
+        <ul>
+            <li>
+                <div>Submenu Item #2-A</div>
+            </li>
+            <li>
+                <div>Submenu Item #2-B</div>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div>-</div>
+    </li>
+    <li>
+        <div>Menu Item #3</div>
+    </li>
+</ul>
+        <script>
+            
+$('#my-menu').menu();
+        </script>
+    </body>
+</html>

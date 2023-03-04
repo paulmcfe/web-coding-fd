@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Displaying a message in a dialog</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    padding: .5rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<div id="my-dialog" title="Hello Dialog World!">
+     Welcome to my dialog widget!
+</div>
+
+<button id="my-button">
+    Display the dialog
+</button>
+        <script>
+            
+// Initialize the dialog widget
+$('#my-dialog').dialog({autoOpen: false});
+
+// Display the dialog when the button is clicked
+$('#my-button').click(function() {
+    $('#my-dialog').dialog('open');
+});
+        </script>
+    </body>
+</html>

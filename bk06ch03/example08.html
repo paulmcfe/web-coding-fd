@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Checking for required fields</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 25rem;
+    margin: 2rem;
+}
+div {
+    margin: .75rem 0 0 1rem;
+}
+label {
+    display: block;
+}
+button {
+    padding: .4rem;
+    border-radius: 10px;
+    margin: .75rem 0 0 1rem;
+    background: forestgreen;
+    color: white;
+    font-size: .8rem;
+}
+.output {
+    display: none;
+    margin: 1rem 0 0 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 0, 0, .25);
+    color: red;
+}
+        </style>
+    </head>
+    <body>
+        
+<form>
+    <div>
+        <label for="user-name">Name</label>
+        <input id="user-name" 
+               type="text"
+               name="user-name">
+    </div>
+    <div>
+        <label for="user-email">Email</label>
+        <input id="user-email" 
+               type="email" 
+               name="user-email">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<article class="output"></article>
+
+
+        <script>
+            
+$(document).ready(function() {
+    $('form').submit(function(e) {
+
+        // Prevent the default form submission
+        e.preventDefault();
+
+        // Convert the data to a query string
+        var formData = $(this).serialize();
+
+        // Send the data to the server
+        $.getJSON('php/validate-required-fields.php', formData, function(data) {
+
+            // Display the output element
+            $('.output').css('display', 'block');
+
+            // Check the validation status
+            if(data.status === 'success') {
+                // Output the success result
+                $('.output').html(data.output);
+            } else {
+                // Output the validation error(s)
+                $('.output').html('<section>Whoops! There were errors:</section>');
+                $.each(data, function(key, error) {
+                    if(key !== 'status') {
+                        // Get the label text
+                        var label = $('label[for=' + key + ']').text();
+                        $('.output').append('<section>Error in ' + label + ' field: ' + error + '</section>');
+                    }
+                });
+            }
+        });
+
+        // Blur the button
+        $('button').blur();
+    });
+});
+        </script>
+    </body>
+</html>

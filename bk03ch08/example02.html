@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Finding substrings</title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.3.1.min.js"></script>
+        
+
+        <style>
+            
+pre,
+div {
+    font-family: "Courier New", monospace;
+    font-size: 1.25rem;
+}
+        </style>
+    </head>
+    <body>
+        
+<pre>
+Web Coding and Development for Dummies
+01234567890123456789012345678901234567
+</pre>
+
+<div id="output">
+</div>
+        <script>
+            
+var bookName = "Web Coding and Development for Dummies";
+
+var str = "\"C\" is at index " + bookName.indexOf("C") + "<br>";
+str += "\"v\" is at index " + bookName.indexOf("v") + "<br>";
+str += "The first space is at index " + bookName.indexOf(" ") + "<br>";
+str += "The first \"D\" is at index " + bookName.indexOf("D") + "<br>";
+str += "The last \"D\" is at index " + bookName.lastIndexOf("D") + "<br>";
+str += "The first \"e\" after index 2 is at index " +  bookName.indexOf("e", 2) + "<br>";
+str += "The substring \"Develop\" begins at index " + bookName.indexOf("Develop");
+
+document.getElementById("output").innerHTML = str;
+        </script>
+    </body>
+</html>
