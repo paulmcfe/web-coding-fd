@@ -4,42 +4,34 @@
         <title>Setting a CSS property value</title>
         <meta charset="UTF-8">
         <script src="jquery-3.3.1.min.js"></script>
-        
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
-            
-			h1 {
-    			font-family: Verdana, serif;
-    			font-size: 2.5rem;
-			}
-
-			div {
-    			margin-top: 1rem;
-    			font-family: Verdana, serif;
-    			font-size: 1.5rem;
-			}
-
-			code {
-    			font-family: "Courier New", monospace;
-    			font-size: 1.5rem;
-			}
+            h1 {
+                font-family: Verdana, serif;
+                font-size: 2.5rem;
+            }
+            div {
+                margin-top: 1rem;
+                font-family: Verdana, serif;
+                font-size: 1.5rem;
+            }
+            code {
+                font-family: "Courier New", monospace;
+                font-size: 1.5rem;
+            }
         </style>
     </head>
     <body>
-        
-		<h1>Welcome to the css() Method!</h1>
-		<div></div>
-
-
+        <h1>Welcome to the css() Method!</h1>
+        <div></div>
         <script>
-            
-$(document).ready(function() {
-    // Set the font-size value for the h1 element
-    $('h1').css('font-size', '3rem');
+            $(document).ready(function() {
+                // Set the font-size value for the h1 element
+                $('h1').css('font-size', '3rem');
 
-    // Display the new size in the div
-    $('div').html('The <code>h1</code> element is now using a <code>font-size</code> value of ' + $('h1').css('font-size'));
-});
+                // Display the new size in the div
+                $('div').html('The <code>h1</code> element is now using a <code>font-size</code> value of ' + $('h1').css('font-size'));
+            });
         </script>
     </body>
 </html>
